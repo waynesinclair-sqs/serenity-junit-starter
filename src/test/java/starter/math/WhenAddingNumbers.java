@@ -4,6 +4,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Narrative;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import starter.steps.MathWizSteps;
@@ -15,7 +16,7 @@ public class WhenAddingNumbers {
     @Steps
     MathWizSteps michael;
 
-    @Test
+    @Test @Ignore
     public void addingSums() {
         // Given
         michael.startsWith(1);
